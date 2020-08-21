@@ -1,3 +1,8 @@
-Ω means that its the level followed by x, y, name, url, (optional) xScale, (optional) yScale, (optional) velX, (optional) velY
-~ means that its a foreground object followed by url, x, y, (optional) xScale, (optional) yScale
-μ means that its a character appearing followed by its name, url, x, y, (optional) xScale, (optional) yScale
+μ means that its a character appearing followed by their name, x, y, xScale, yScale
+^ means that the next String is the person talking
+/ means that the text will appear after another input and appear at the beginning of the text section
+ア means that we are removing a character from the cutscene (first kanji in aqours) followed by the character name
+Ω means that the resulting URL is for the background
+~ means that the next character will be moving to the next x y coordinates with the next x y speed
+\ means that its a transition
+* means to just wait till the key is pressed can happen in any line expect for if any of the other key words take the full line (yeet.nextLine())

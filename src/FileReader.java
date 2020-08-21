@@ -37,13 +37,44 @@ public class FileReader {
         while (yeet.hasNext()) {
             String next = yeet.next();
 
-            if (next.equals("Ω")) {
-
+            if (next.equals("μ")) {
+                String[] line = yeet.nextLine().split(" ");
+                objs.add(new GameObject(Double.parseDouble(line[1]), Double.parseDouble(line[2])));
+                // line[0] = character name
+                // line[3] and line[4] = scaling for the x and y
+            } else if (next.equals("Ω")) {
+                background = yeet.nextLine();
+            } else if (next.equals("ア")) { // Might not need this one if we don't add names to the class or might just not need it in general
+                // String name = yeet.nextLine()
+                // search through objs and remove the object with that name
+            } else if (next.equals("^")) { // Will probably have to change if we arent adding names
+                talking = yeet.nextLine();
+                // Resets our out text
+                for (int i = 0; i < 5; i++) {
+                    out[i] = "";
+                }
+                index = 0;
+            } else if (next.equals("/")) {
+                // Resets our out text
+                for (int i = 0; i < 5; i++) {
+                    out[i] = "";
+                }
+                index = 0;
             } else if (next.equals("~")) {
 
-            } else if (next.equals("μ")) {
+            } else if (next.equals("\\")) {
 
+            } else if (next.equals("*")) {
+                while (!StdDraw.isKeyPressed(88)) { // Waits to progress until you give it another input
+                    continue;
+                }
+            } else if (next.equals("\n")) { // Checks to see if we move onto a new line.
+                index++;
+            } else { // Fails to recognize any key characters so it adds the text to the output
+                out[index] += next;
             }
+
+            // draws the things
         }
     }
 
