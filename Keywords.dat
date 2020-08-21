@@ -1,0 +1,3 @@
+Ω means that its the level followed by x, y, name, url, xScale, yScale, velX, velY
+~ means that its a foreground effect followed by url, x, y, xScale, yScale
+μ means that its a character appearing followed by its name, url, x, y, xScale, yScale
