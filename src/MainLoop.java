@@ -16,4 +16,12 @@ public class MainLoop {
     }
 
     //==================================================================================================================
+
+    public void loop() {
+
+        // TODO: 8/21/2020 change the loop control variable
+        while (true) {
+
+        }
+    }
 }

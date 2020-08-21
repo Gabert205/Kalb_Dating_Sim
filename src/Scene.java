@@ -7,13 +7,21 @@ import java.util.List;
 
 public abstract class Scene {
 
+    private final String NAME;
+
     private final List<GameObject> gameObjects;
 
     //==================================================================================================================
 
-    public Scene() {
+    public Scene(String sceneName) {
+        this.NAME = sceneName;
         this.gameObjects = new ArrayList<>();
+
     }
 
     //==================================================================================================================
+
+    public abstract void update();
+
+    public abstract void draw();
 }

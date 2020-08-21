@@ -7,7 +7,24 @@ public class SceneManager {
     private Scene currentScene;
     private Scene lastScene;
 
+    //==================================================================================================================
+
     public SceneManager() {
         this.scenes = new ArrayList<>();
+    }
+
+    //==================================================================================================================
+
+    public Scene getCurrentScene() {
+        return currentScene;
+    }
+
+    public void setCurrentScene(Scene currentScene) {
+        this.lastScene = currentScene;
+        this.currentScene = currentScene;
+    }
+
+    public Scene getLastScene() {
+        return lastScene;
     }
 }
