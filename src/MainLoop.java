@@ -7,11 +7,12 @@ import java.util.List;
  */
 public class MainLoop {
 
+    private final SceneManager sceneManager;
 
     //==================================================================================================================
 
     public MainLoop() {
-
+        sceneManager = new SceneManager();
     }
 
     //==================================================================================================================
